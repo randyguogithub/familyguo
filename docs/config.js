@@ -3,7 +3,7 @@ var CONFIG = {
   "showUserManual": false,
   "title": {
     "color": "#05668d",
-    "text": "郭氏家谱"
+    "text": "宝坵郭氏若虞公家谱"
   },
   "information": "Information text (you can use HTML)",
   "photoUrl": {
@@ -16,7 +16,7 @@ var CONFIG = {
     "columnview": true,
     "staffColumnview": true,
     "showNrDepartments": true,
-    "showNrPeople": true
+    "showNrPeople": false
   },
   "enableScreenCapture": true,
   "levelColors": ["#0c058d", "#05668d", "#8d6e05", "#8d2305", "#cfb303"],
@@ -26,28 +26,36 @@ var CONFIG = {
     "type": "text"
   }],
   "personProperties": [{
-    "name": "Phone",
+    "name": "wife_ma",
     "type": "text",
     "order": 0
   }, {
+    "name": "wife_po",
+    "type": "text",
+    "order": 1
+  }, {
+    "name": "Phone",
+    "type": "text",
+    "order": 2
+  }, {
     "name": "Email",
     "type": "email",
-    "order": 1
+    "order": 3
   }, {
     "name": "Homepage",
     "type": "url",
-    "order": 2
+    "order": 4
   }, {
     "name": "Country",
     "type": "text",
-    "order": 3
+    "order": 5
   }, {
     "name": "City",
     "type": "text",
-    "order": 4
+    "order": 6
   }, {
     "name": "Street",
     "type": "text",
-    "order": 5
+    "order": 7
   }]
 }

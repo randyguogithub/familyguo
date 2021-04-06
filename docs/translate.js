@@ -13,8 +13,8 @@ var UINAMES = {
     departmentDescription: '简介',
     departmentType: '妈/婆',
     departmentHierarchy: '传承',
-    departmentTypeStaff: 'Staff department',
-    departmentTypeNormal: 'Normal department',
-    managerOfDepartment: '创始人'
+    departmentTypeStaff: '',
+    departmentTypeNormal: '',
+    managerOfDepartment: '当铺'
   }
 }
