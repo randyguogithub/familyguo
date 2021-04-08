@@ -34,28 +34,32 @@ var CONFIG = {
     "type": "text",
     "order": 1
   }, {
-    "name": "Phone",
+    "name": "remark",
     "type": "text",
     "order": 2
   }, {
+    "name": "Phone",
+    "type": "text",
+    "order": 3
+  }, {
     "name": "Email",
     "type": "email",
-    "order": 3
+    "order": 4
   }, {
     "name": "Homepage",
     "type": "url",
-    "order": 4
+    "order": 5
   }, {
     "name": "Country",
     "type": "text",
-    "order": 5
+    "order": 6
   }, {
     "name": "City",
     "type": "text",
-    "order": 6
+    "order": 7
   }, {
     "name": "Street",
     "type": "text",
-    "order": 7
+    "order": 8
   }]
 }

@@ -15,6 +15,7 @@ div(
       .level_indicator(
         :style='{ backgroundColor: config.levelColors[level - 1] || "#FFFFFF" }'
       )
+      //- .level_indicator(v-html='departmentData.name')
       template(v-if='!managerPhotoView')
         template(v-if='managerNameView')
           .name1(v-html='departmentData.name')
@@ -34,8 +35,10 @@ div(
               .material-icons.nophoto(v-else) face
             td
               .textdiv
+                .name3(v-html='departmentData.manager.functionName')
                 .name(v-html='departmentData.name')
-                .name_manager(v-if='managerNameView') {{ departmentData.manager.name }}
+                .name_manager(v-if='managerNameView') {{ departmentData.manager.fields.wife_ma }}
+                //- .name_manager(v-if='managerNameView') {{ departmentData.manager.name }}
 
       template(v-if='departmentData.children.length')
         i.material-icons.arrow.down(
@@ -269,10 +272,10 @@ export default {
 }
 .level_indicator {
   position: absolute;
-  height: 3px;
+  /* height: 3px; */
   width: 100px;
   right: 10px;
-  top: 3px;
+  top: 10px;
   border-radius: 5px;
 }
 .textdiv {
@@ -294,6 +297,10 @@ export default {
 }
 .name {
   color: red;
+  font-weight: bold;
+}
+.name3 {
+  color: black;
   font-weight: bold;
 }
 .name1,
